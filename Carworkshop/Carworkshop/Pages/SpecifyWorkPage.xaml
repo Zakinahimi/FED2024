@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Carworkshop.ViewModels"
              x:Class="Carworkshop.Pages.SpecifyWorkPage"
              Title="Specify Work">
 
+    <ContentPage.BindingContext>
+        <vm:SpecifyWorkViewModel />
+    </ContentPage.BindingContext>
+
     <StackLayout>
         <Entry Placeholder="Search by License Plate" Text="{Binding SearchTerm}" FontSize="Body" />
-        <Button Text="Search" Clicked="OnSearchClicked" FontSize="Body" />
+        <Button Text="Search" Command="{Binding SearchCommand}" FontSize="Body" />
         <StackLayout x:Name="appointmentDetails" IsVisible="{Binding IsAppointmentFound}">
             <Label Text="Mechanic Name" FontSize="Title" />
             <Entry Text="{Binding MechanicName}" FontSize="Body" />
@@ -18,7 +23,7 @@
             <Entry Text="{Binding HoursWorked}" FontSize="Body" />
             <Label Text="Hourly Rate" FontSize="Title" />
             <Entry Text="{Binding HourlyRate}" FontSize="Body" />
-            <Button Text="Save" Clicked="OnSaveClicked" FontSize="Body" />
+            <Button Text="Save" Command="{Binding SaveCommand}" FontSize="Body" />
         </StackLayout>
     </StackLayout>
 </ContentPage>
