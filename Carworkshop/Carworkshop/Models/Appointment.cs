@@ -13,6 +13,7 @@ namespace Carworkshop.Models
         public string CarModel { get; set; } = string.Empty;
         public string LicensePlate { get; set; } = string.Empty;
         public DateTime Date { get; set; } = DateTime.Now;
+        public TimeSpan Time { get; set; } = TimeSpan.Zero;
         public string TaskDescription { get; set; } = string.Empty;
         public string MechanicName { get; set; } = string.Empty;
         public string MaterialsUsed { get; set; } = string.Empty;
@@ -23,4 +24,4 @@ namespace Carworkshop.Models
         [Ignore]
         public decimal TotalCost => MaterialsCost + (HoursWorked * HourlyRate);
     }
-}  
+}

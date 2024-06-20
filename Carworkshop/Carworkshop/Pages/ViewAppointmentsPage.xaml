@@ -9,20 +9,28 @@
         <vm:ViewAppointmentsViewModel />
     </ContentPage.BindingContext>
 
-    <StackLayout>
-        <Label Text="Select Date" FontSize="Title" />
-        <DatePicker Date="{Binding SelectedDate}" />
-        <ListView ItemsSource="{Binding Appointments}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="10">
-                            <Label Text="{Binding CustomerName}" FontAttributes="Bold" FontSize="Title" />
-                            <Label Text="{Binding TaskDescription}" FontSize="Body" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Select Date" Style="{StaticResource TitleLabel}" />
+            <DatePicker Date="{Binding SelectedDate}" />
+            <ListView ItemsSource="{Binding Appointments}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding CustomerName}" FontAttributes="Bold" Style="{StaticResource TitleLabel}" />
+                                <Label Text="{Binding Address}" />
+                                <Label Text="{Binding CarBrand}" />
+                                <Label Text="{Binding CarModel}" />
+                                <Label Text="{Binding LicensePlate}" />
+                                <Label Text="{Binding Date, StringFormat='{0:MM/dd/yyyy}'}" />
+                                <Label Text="{Binding Time, StringFormat='{0:hh\\:mm}'}" />
+                                <Label Text="{Binding TaskDescription}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

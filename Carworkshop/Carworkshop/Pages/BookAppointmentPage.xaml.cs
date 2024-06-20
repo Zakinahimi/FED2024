@@ -1,4 +1,3 @@
-// BookAppointmentPage.xaml.cs
 using Microsoft.Maui.Controls;
 
 namespace Carworkshop.Pages
@@ -8,6 +7,7 @@ namespace Carworkshop.Pages
         public BookAppointmentPage()
         {
             InitializeComponent();
+            BindingContext = new Carworkshop.ViewModels.BookAppointmentViewModel();
         }
     }
 }

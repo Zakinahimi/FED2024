@@ -9,6 +9,8 @@
     <Color x:Key="AccentColor">#FF0266</Color>
     <Color x:Key="BackgroundColor">#121212</Color>
     <Color x:Key="TextColor">#FFFFFF</Color>
+    <Color x:Key="EntryBackgroundColor">#333333</Color>
+    <Color x:Key="EntryPlaceholderColor">#757575</Color>
 
     <!-- Define font sizes -->
     <x:Double x:Key="TitleFontSize">24</x:Double>
@@ -18,40 +20,49 @@
     <!-- Define styles for different elements -->
     <Style TargetType="ContentPage">
         <Setter Property="BackgroundColor" Value="{DynamicResource BackgroundColor}" />
-        <Setter Property="Padding" Value="10" />
+        <Setter Property="Padding" Value="20" />
     </Style>
 
     <Style TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
         <Setter Property="FontSize" Value="{DynamicResource BodyFontSize}" />
-        <Setter Property="Margin" Value="0,5,0,5" />
+        <Setter Property="Margin" Value="0,10,0,0" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="TitleLabel">
+        <Setter Property="FontSize" Value="{DynamicResource TitleFontSize}" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="Margin" Value="0,20,0,10" />
     </Style>
 
     <Style TargetType="Entry">
         <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
-        <Setter Property="BackgroundColor" Value="#333333" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource EntryBackgroundColor}" />
         <Setter Property="FontSize" Value="{DynamicResource BodyFontSize}" />
-        <Setter Property="Margin" Value="0,5,0,5" />
-        <Setter Property="PlaceholderColor" Value="{DynamicResource SecondaryColor}" />
+        <Setter Property="Margin" Value="0,5,0,20" />
+        <Setter Property="PlaceholderColor" Value="{DynamicResource EntryPlaceholderColor}" />
+        <Setter Property="HeightRequest" Value="40" />
     </Style>
 
     <Style TargetType="Button">
         <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}" />
         <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
         <Setter Property="FontSize" Value="{DynamicResource BodyFontSize}" />
-        <Setter Property="CornerRadius" Value="20" />
-        <Setter Property="Margin" Value="0,10,0,10" />
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="HeightRequest" Value="50" />
+        <Setter Property="Margin" Value="0,20,0,0" />
     </Style>
 
     <Style TargetType="DatePicker">
         <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
-        <Setter Property="BackgroundColor" Value="#333333" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource EntryBackgroundColor}" />
         <Setter Property="FontSize" Value="{DynamicResource BodyFontSize}" />
-        <Setter Property="Margin" Value="0,5,0,5" />
+        <Setter Property="Margin" Value="0,5,0,20" />
+        <Setter Property="HeightRequest" Value="40" />
     </Style>
 
     <Style TargetType="StackLayout">
         <Setter Property="Margin" Value="0,10,0,10" />
-        <Setter Property="Spacing" Value="10" />
+        <Setter Property="Spacing" Value="15" />
     </Style>
 </ResourceDictionary>

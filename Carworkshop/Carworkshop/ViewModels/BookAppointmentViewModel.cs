@@ -30,6 +30,7 @@ namespace Carworkshop.ViewModels
                 CarModel = CarModel,
                 LicensePlate = LicensePlate,
                 Date = Date,
+                Time = Time,
                 TaskDescription = TaskDescription
             };
 

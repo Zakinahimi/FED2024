@@ -7,6 +7,7 @@ namespace Carworkshop.Pages
         public SpecifyWorkPage()
         {
             InitializeComponent();
+            BindingContext = new Carworkshop.ViewModels.SpecifyWorkViewModel();
         }
     }
 }

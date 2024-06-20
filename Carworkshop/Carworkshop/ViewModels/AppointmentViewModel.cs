@@ -12,6 +12,7 @@ namespace Carworkshop.ViewModels
         private string _carModel = string.Empty;
         private string _licensePlate = string.Empty;
         private DateTime _date = DateTime.Now;
+        private TimeSpan _time = TimeSpan.Zero;
         private string _taskDescription = string.Empty;
         private string _mechanicName = string.Empty;
         private string _materialsUsed = string.Empty;
@@ -53,6 +54,12 @@ namespace Carworkshop.ViewModels
         {
             get => _date;
             set => SetProperty(ref _date, value);
+        }
+
+        public TimeSpan Time
+        {
+            get => _time;
+            set => SetProperty(ref _time, value);
         }
 
         public string TaskDescription

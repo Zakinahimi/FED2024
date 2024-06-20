@@ -9,21 +9,39 @@
         <vm:SpecifyWorkViewModel />
     </ContentPage.BindingContext>
 
-    <StackLayout>
-        <Entry Placeholder="Search by License Plate" Text="{Binding SearchTerm}" FontSize="Body" />
-        <Button Text="Search" Command="{Binding SearchCommand}" FontSize="Body" />
-        <StackLayout x:Name="appointmentDetails" IsVisible="{Binding IsAppointmentFound}">
-            <Label Text="Mechanic Name" FontSize="Title" />
-            <Entry Text="{Binding MechanicName}" FontSize="Body" />
-            <Label Text="Materials Used" FontSize="Title" />
-            <Entry Text="{Binding MaterialsUsed}" FontSize="Body" />
-            <Label Text="Materials Cost" FontSize="Title" />
-            <Entry Text="{Binding MaterialsCost}" FontSize="Body" />
-            <Label Text="Hours Worked" FontSize="Title" />
-            <Entry Text="{Binding HoursWorked}" FontSize="Body" />
-            <Label Text="Hourly Rate" FontSize="Title" />
-            <Entry Text="{Binding HourlyRate}" FontSize="Body" />
-            <Button Text="Save" Command="{Binding SaveCommand}" FontSize="Body" />
+    <ScrollView>
+        <StackLayout>
+            <Entry Placeholder="Search by License Plate" Text="{Binding SearchTerm}" />
+            <Button Text="Search" Command="{Binding SearchCommand}" />
+            <StackLayout x:Name="appointmentDetails" IsVisible="{Binding IsAppointmentFound}">
+                <Label Text="Customer Name" Style="{StaticResource TitleLabel}" />
+                <Entry Placeholder="Enter customer name" Text="{Binding CustomerName}" />
+                <Label Text="Address" Style="{StaticResource TitleLabel}" />
+                <Entry Placeholder="Enter address" Text="{Binding Address}" />
+                <Label Text="Car Brand" Style="{StaticResource TitleLabel}" />
+                <Entry Placeholder="Enter car brand" Text="{Binding CarBrand}" />
+                <Label Text="Car Model" Style="{StaticResource TitleLabel}" />
+                <Entry Placeholder="Enter car model" Text="{Binding CarModel}" />
+                <Label Text="License Plate" Style="{StaticResource TitleLabel}" />
+                <Entry Placeholder="Enter license plate" Text="{Binding LicensePlate}" />
+                <Label Text="Date" Style="{StaticResource TitleLabel}" />
+                <DatePicker Date="{Binding Date}" />
+                <Label Text="Time" Style="{StaticResource TitleLabel}" />
+                <TimePicker Time="{Binding Time}" />
+                <Label Text="Task Description" Style="{StaticResource TitleLabel}" />
+                <Entry Placeholder="Enter task description" Text="{Binding TaskDescription}" />
+                <Label Text="Mechanic Name" Style="{StaticResource TitleLabel}" />
+                <Entry Text="{Binding MechanicName}" />
+                <Label Text="Materials Used" Style="{StaticResource TitleLabel}" />
+                <Entry Text="{Binding MaterialsUsed}" />
+                <Label Text="Materials Cost" Style="{StaticResource TitleLabel}" />
+                <Entry Text="{Binding MaterialsCost}" />
+                <Label Text="Hours Worked" Style="{StaticResource TitleLabel}" />
+                <Entry Text="{Binding HoursWorked}" />
+                <Label Text="Hourly Rate" Style="{StaticResource TitleLabel}" />
+                <Entry Text="{Binding HourlyRate}" />
+                <Button Text="Save" Command="{Binding SaveCommand}" />
+            </StackLayout>
         </StackLayout>
-    </StackLayout>
+    </ScrollView>
 </ContentPage>

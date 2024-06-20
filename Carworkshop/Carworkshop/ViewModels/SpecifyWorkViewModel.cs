@@ -49,6 +49,7 @@ namespace Carworkshop.ViewModels
                 CarModel = appointment.CarModel;
                 LicensePlate = appointment.LicensePlate;
                 Date = appointment.Date;
+                Time = appointment.Time;
                 TaskDescription = appointment.TaskDescription;
                 MechanicName = appointment.MechanicName;
                 MaterialsUsed = appointment.MaterialsUsed;
@@ -75,6 +76,7 @@ namespace Carworkshop.ViewModels
                 CarModel = CarModel,
                 LicensePlate = LicensePlate,
                 Date = Date,
+                Time = Time,
                 TaskDescription = TaskDescription,
                 MechanicName = MechanicName,
                 MaterialsUsed = MaterialsUsed,

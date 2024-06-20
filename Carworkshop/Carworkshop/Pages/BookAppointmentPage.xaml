@@ -9,21 +9,25 @@
         <vm:BookAppointmentViewModel />
     </ContentPage.BindingContext>
 
-    <StackLayout>
-        <Label Text="Customer Name" FontSize="Title" />
-        <Entry Placeholder="Enter customer name" Text="{Binding CustomerName}" />
-        <Label Text="Address" FontSize="Title" />
-        <Entry Placeholder="Enter address" Text="{Binding Address}" />
-        <Label Text="Car Brand" FontSize="Title" />
-        <Entry Placeholder="Enter car brand" Text="{Binding CarBrand}" />
-        <Label Text="Car Model" FontSize="Title" />
-        <Entry Placeholder="Enter car model" Text="{Binding CarModel}" />
-        <Label Text="License Plate" FontSize="Title" />
-        <Entry Placeholder="Enter license plate" Text="{Binding LicensePlate}" />
-        <Label Text="Date" FontSize="Title" />
-        <DatePicker Date="{Binding Date}" />
-        <Label Text="Task Description" FontSize="Title" />
-        <Entry Placeholder="Enter task description" Text="{Binding TaskDescription}" />
-        <Button Text="Save Appointment" Command="{Binding SaveCommand}" />
-    </StackLayout>
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Customer Name" Style="{StaticResource TitleLabel}" />
+            <Entry Placeholder="Enter customer name" Text="{Binding CustomerName}" />
+            <Label Text="Address" Style="{StaticResource TitleLabel}" />
+            <Entry Placeholder="Enter address" Text="{Binding Address}" />
+            <Label Text="Car Brand" Style="{StaticResource TitleLabel}" />
+            <Entry Placeholder="Enter car brand" Text="{Binding CarBrand}" />
+            <Label Text="Car Model" Style="{StaticResource TitleLabel}" />
+            <Entry Placeholder="Enter car model" Text="{Binding CarModel}" />
+            <Label Text="License Plate" Style="{StaticResource TitleLabel}" />
+            <Entry Placeholder="Enter license plate" Text="{Binding LicensePlate}" />
+            <Label Text="Date" Style="{StaticResource TitleLabel}" />
+            <DatePicker Date="{Binding Date}" />
+            <Label Text="Time" Style="{StaticResource TitleLabel}" />
+            <TimePicker Time="{Binding Time}" />
+            <Label Text="Task Description" Style="{StaticResource TitleLabel}" />
+            <Entry Placeholder="Enter task description" Text="{Binding TaskDescription}" />
+            <Button Text="Save Appointment" Command="{Binding SaveCommand}" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

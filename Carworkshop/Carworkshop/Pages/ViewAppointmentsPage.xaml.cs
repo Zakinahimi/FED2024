@@ -8,6 +8,7 @@ namespace Carworkshop.Pages
         public ViewAppointmentsPage()
         {
             InitializeComponent();
+            BindingContext = new ViewAppointmentsViewModel();
         }
     }
 }
