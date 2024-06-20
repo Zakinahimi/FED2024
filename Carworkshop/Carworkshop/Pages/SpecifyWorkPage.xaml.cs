@@ -67,7 +67,7 @@ namespace Carworkshop.Pages
             await DisplayAlert("Success", "Work details saved successfully.", "OK");
         }
 
-        public new event PropertyChangedEventHandler PropertyChanged;
+        public new event PropertyChangedEventHandler? PropertyChanged;
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {

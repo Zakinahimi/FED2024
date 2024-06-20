@@ -5,20 +5,20 @@
              Title="Specify Work">
 
     <StackLayout>
-        <Entry Placeholder="Search by License Plate" Text="{Binding SearchTerm}" FontSize="{DynamicResource BodyFontSize}" />
-        <Button Text="Search" Clicked="OnSearchClicked" FontSize="{DynamicResource BodyFontSize}" />
+        <Entry Placeholder="Search by License Plate" Text="{Binding SearchTerm}" FontSize="Body" />
+        <Button Text="Search" Clicked="OnSearchClicked" FontSize="Body" />
         <StackLayout x:Name="appointmentDetails" IsVisible="{Binding IsAppointmentFound}">
-            <Label Text="Mechanic Name" FontSize="{DynamicResource TitleFontSize}" />
-            <Entry Text="{Binding MechanicName}" FontSize="{DynamicResource BodyFontSize}" />
-            <Label Text="Materials Used" FontSize="{DynamicResource TitleFontSize}" />
-            <Entry Text="{Binding MaterialsUsed}" FontSize="{DynamicResource BodyFontSize}" />
-            <Label Text="Materials Cost" FontSize="{DynamicResource TitleFontSize}" />
-            <Entry Text="{Binding MaterialsCost}" FontSize="{DynamicResource BodyFontSize}" />
-            <Label Text="Hours Worked" FontSize="{DynamicResource TitleFontSize}" />
-            <Entry Text="{Binding HoursWorked}" FontSize="{DynamicResource BodyFontSize}" />
-            <Label Text="Hourly Rate" FontSize="{DynamicResource TitleFontSize}" />
-            <Entry Text="{Binding HourlyRate}" FontSize="{DynamicResource BodyFontSize}" />
-            <Button Text="Save" Clicked="OnSaveClicked" FontSize="{DynamicResource BodyFontSize}" />
+            <Label Text="Mechanic Name" FontSize="Title" />
+            <Entry Text="{Binding MechanicName}" FontSize="Body" />
+            <Label Text="Materials Used" FontSize="Title" />
+            <Entry Text="{Binding MaterialsUsed}" FontSize="Body" />
+            <Label Text="Materials Cost" FontSize="Title" />
+            <Entry Text="{Binding MaterialsCost}" FontSize="Body" />
+            <Label Text="Hours Worked" FontSize="Title" />
+            <Entry Text="{Binding HoursWorked}" FontSize="Body" />
+            <Label Text="Hourly Rate" FontSize="Title" />
+            <Entry Text="{Binding HourlyRate}" FontSize="Body" />
+            <Button Text="Save" Clicked="OnSaveClicked" FontSize="Body" />
         </StackLayout>
     </StackLayout>
 </ContentPage>

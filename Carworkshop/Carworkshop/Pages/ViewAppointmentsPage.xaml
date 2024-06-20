@@ -5,15 +5,15 @@
              Title="View Appointments">
 
     <StackLayout>
-        <Label Text="Select Date" FontSize="{DynamicResource TitleFontSize}" />
+        <Label Text="Select Date" FontSize="Title" />
         <DatePicker x:Name="datePicker" DateSelected="OnDateSelected" />
         <ListView x:Name="appointmentsListView">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Padding="10">
-                            <Label Text="{Binding CustomerName}" FontAttributes="Bold" FontSize="{DynamicResource TitleFontSize}" />
-                            <Label Text="{Binding TaskDescription}" FontSize="{DynamicResource BodyFontSize}" />
+                            <Label Text="{Binding CustomerName}" FontAttributes="Bold" FontSize="Title" />
+                            <Label Text="{Binding TaskDescription}" FontSize="Body" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

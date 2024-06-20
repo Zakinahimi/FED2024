@@ -5,19 +5,19 @@
              Title="Book Appointment">
 
     <StackLayout>
-        <Label Text="Customer Name" FontSize="{DynamicResource TitleFontSize}" />
+        <Label Text="Customer Name" FontSize="Title" />
         <Entry Placeholder="Enter customer name" Text="{Binding CustomerName}" />
-        <Label Text="Address" FontSize="{DynamicResource TitleFontSize}" />
+        <Label Text="Address" FontSize="Title" />
         <Entry Placeholder="Enter address" Text="{Binding Address}" />
-        <Label Text="Car Brand" FontSize="{DynamicResource TitleFontSize}" />
+        <Label Text="Car Brand" FontSize="Title" />
         <Entry Placeholder="Enter car brand" Text="{Binding CarBrand}" />
-        <Label Text="Car Model" FontSize="{DynamicResource TitleFontSize}" />
+        <Label Text="Car Model" FontSize="Title" />
         <Entry Placeholder="Enter car model" Text="{Binding CarModel}" />
-        <Label Text="License Plate" FontSize="{DynamicResource TitleFontSize}" />
+        <Label Text="License Plate" FontSize="Title" />
         <Entry Placeholder="Enter license plate" Text="{Binding LicensePlate}" />
-        <Label Text="Date" FontSize="{DynamicResource TitleFontSize}" />
+        <Label Text="Date" FontSize="Title" />
         <DatePicker Date="{Binding Date}" />
-        <Label Text="Task Description" FontSize="{DynamicResource TitleFontSize}" />
+        <Label Text="Task Description" FontSize="Title" />
         <Entry Placeholder="Enter task description" Text="{Binding TaskDescription}" />
         <Button Text="Save Appointment" Clicked="OnSaveAppointmentClicked" />
     </StackLayout>

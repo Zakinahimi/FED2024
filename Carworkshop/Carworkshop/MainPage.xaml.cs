@@ -24,15 +24,5 @@ namespace Carworkshop
         {
             await Navigation.PushAsync(new SpecifyWorkPage());
         }
-
-        private async void OnEditAppointmentClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new EditAppointmentPage());
-        }
-
-        private async void OnViewInvoicesClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new InvoicePage());
-        }
     }
 }

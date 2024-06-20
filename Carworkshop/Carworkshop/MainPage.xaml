@@ -7,7 +7,5 @@
         <Button Text="Book New Appointment" Clicked="OnBookAppointmentClicked" />
         <Button Text="View Appointments" Clicked="OnViewAppointmentsClicked" />
         <Button Text="Specify Work Done" Clicked="OnSpecifyWorkClicked" />
-        <Button Text="Edit Appointment" Clicked="OnEditAppointmentClicked" />
-        <Button Text="View Invoices" Clicked="OnViewInvoicesClicked" />
     </StackLayout>
 </ContentPage>

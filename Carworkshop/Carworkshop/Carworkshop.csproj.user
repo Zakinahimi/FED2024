@@ -9,12 +9,6 @@
     <MauiXaml Update="Pages\BookAppointmentPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\EditAppointmentPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="Pages\InvoicePage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
     <MauiXaml Update="Pages\SpecifyWorkPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

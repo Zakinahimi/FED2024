@@ -36,18 +36,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.Pages.BookAppo
 build_metadata.AdditionalFiles.TargetPath = Pages\BookAppointmentPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\BookAppointmentPage.xaml
 
-[C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/Pages/EditAppointmentPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.Pages.EditAppointmentPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\EditAppointmentPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\EditAppointmentPage.xaml
-
-[C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/Pages/InvoicePage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.Pages.InvoicePage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\InvoicePage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\InvoicePage.xaml
-
 [C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/Pages/SpecifyWorkPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.Pages.SpecifyWorkPage.xaml
