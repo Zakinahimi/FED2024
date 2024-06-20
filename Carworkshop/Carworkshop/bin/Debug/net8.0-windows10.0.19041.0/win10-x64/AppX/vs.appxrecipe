@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\nahimi\OneDrive\Skrivebord\FED2024\FED2024\Carworkshop\Carworkshop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-20T13:33:27.406</Modified>
+      <Modified>2024-06-20T16:48:22.720</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nahimi\OneDrive\Skrivebord\FED2024\FED2024\Carworkshop\Carworkshop\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Carworkshop.dll">
       <PackagePath>Carworkshop.dll</PackagePath>
-      <Modified>2024-06-20T13:33:27.082</Modified>
+      <Modified>2024-06-20T16:48:21.864</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nahimi\OneDrive\Skrivebord\FED2024\FED2024\Carworkshop\Carworkshop\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Carworkshop.exe</PackagePath>
-      <Modified>2024-06-20T13:33:27.091</Modified>
+      <Modified>2024-06-20T16:48:21.911</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nahimi\OneDrive\Skrivebord\FED2024\FED2024\Carworkshop\Carworkshop\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

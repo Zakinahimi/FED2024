@@ -23,4 +23,4 @@ namespace Carworkshop.Models
         [Ignore]
         public decimal TotalCost => MaterialsCost + (HoursWorked * HourlyRate);
     }
-}
+}  
