@@ -1,0 +1,77 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Carworkshop
+build_property.ProjectDir = C:\Users\nahimi\OneDrive\Skrivebord\FED2024\FED2024\Carworkshop\Carworkshop\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/Pages/BookAppointmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.Pages.BookAppointmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\BookAppointmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\BookAppointmentPage.xaml
+
+[C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/Pages/EditAppointmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.Pages.EditAppointmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\EditAppointmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\EditAppointmentPage.xaml
+
+[C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/Pages/InvoicePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.Pages.InvoicePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\InvoicePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\InvoicePage.xaml
+
+[C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/Pages/SpecifyWorkPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.Pages.SpecifyWorkPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SpecifyWorkPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SpecifyWorkPage.xaml
+
+[C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/Pages/ViewAppointmentsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.Pages.ViewAppointmentsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ViewAppointmentsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ViewAppointmentsPage.xaml
+
+[C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/nahimi/OneDrive/Skrivebord/FED2024/FED2024/Carworkshop/Carworkshop/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Carworkshop.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carworkshop.Pages.BookAppointmentPage"
+             Title="Book Appointment">
+
+    <StackLayout>
+        <Label Text="Customer Name" FontSize="{DynamicResource TitleFontSize}" />
+        <Entry Placeholder="Enter customer name" Text="{Binding CustomerName}" />
+        <Label Text="Address" FontSize="{DynamicResource TitleFontSize}" />
+        <Entry Placeholder="Enter address" Text="{Binding Address}" />
+        <Label Text="Car Brand" FontSize="{DynamicResource TitleFontSize}" />
+        <Entry Placeholder="Enter car brand" Text="{Binding CarBrand}" />
+        <Label Text="Car Model" FontSize="{DynamicResource TitleFontSize}" />
+        <Entry Placeholder="Enter car model" Text="{Binding CarModel}" />
+        <Label Text="License Plate" FontSize="{DynamicResource TitleFontSize}" />
+        <Entry Placeholder="Enter license plate" Text="{Binding LicensePlate}" />
+        <Label Text="Date" FontSize="{DynamicResource TitleFontSize}" />
+        <DatePicker Date="{Binding Date}" />
+        <Label Text="Task Description" FontSize="{DynamicResource TitleFontSize}" />
+        <Entry Placeholder="Enter task description" Text="{Binding TaskDescription}" />
+        <Button Text="Save Appointment" Clicked="OnSaveAppointmentClicked" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carworkshop.Pages.ViewAppointmentsPage"
+             Title="View Appointments">
+
+    <StackLayout>
+        <Label Text="Select Date" FontSize="{DynamicResource TitleFontSize}" />
+        <DatePicker x:Name="datePicker" DateSelected="OnDateSelected" />
+        <ListView x:Name="appointmentsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding CustomerName}" FontAttributes="Bold" FontSize="{DynamicResource TitleFontSize}" />
+                            <Label Text="{Binding TaskDescription}" FontSize="{DynamicResource BodyFontSize}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

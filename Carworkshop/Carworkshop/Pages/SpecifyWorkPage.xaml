@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carworkshop.Pages.SpecifyWorkPage"
+             Title="Specify Work">
+
+    <StackLayout>
+        <Entry Placeholder="Search by License Plate" Text="{Binding SearchTerm}" FontSize="{DynamicResource BodyFontSize}" />
+        <Button Text="Search" Clicked="OnSearchClicked" FontSize="{DynamicResource BodyFontSize}" />
+        <StackLayout x:Name="appointmentDetails" IsVisible="{Binding IsAppointmentFound}">
+            <Label Text="Mechanic Name" FontSize="{DynamicResource TitleFontSize}" />
+            <Entry Text="{Binding MechanicName}" FontSize="{DynamicResource BodyFontSize}" />
+            <Label Text="Materials Used" FontSize="{DynamicResource TitleFontSize}" />
+            <Entry Text="{Binding MaterialsUsed}" FontSize="{DynamicResource BodyFontSize}" />
+            <Label Text="Materials Cost" FontSize="{DynamicResource TitleFontSize}" />
+            <Entry Text="{Binding MaterialsCost}" FontSize="{DynamicResource BodyFontSize}" />
+            <Label Text="Hours Worked" FontSize="{DynamicResource TitleFontSize}" />
+            <Entry Text="{Binding HoursWorked}" FontSize="{DynamicResource BodyFontSize}" />
+            <Label Text="Hourly Rate" FontSize="{DynamicResource TitleFontSize}" />
+            <Entry Text="{Binding HourlyRate}" FontSize="{DynamicResource BodyFontSize}" />
+            <Button Text="Save" Clicked="OnSaveClicked" FontSize="{DynamicResource BodyFontSize}" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

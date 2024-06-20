@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carworkshop.Pages.InvoicePage"
+             Title="View Invoice">
+
+    <StackLayout>
+        <Entry Placeholder="Search by License Plate" Text="{Binding SearchTerm}" />
+        <Button Text="Search" Clicked="OnSearchClicked" />
+        <StackLayout x:Name="invoiceDetails" IsVisible="{Binding IsAppointmentFound}">
+            <Label Text="Customer Name" FontSize="{DynamicResource TitleFontSize}" FontAttributes="Bold" />
+            <Label Text="{Binding CustomerName}" />
+            <Label Text="Mechanic Name" FontSize="{DynamicResource SubtitleFontSize}" FontAttributes="Bold" />
+            <Label Text="{Binding MechanicName}" />
+            <Label Text="Materials Used" FontSize="{DynamicResource SubtitleFontSize}" FontAttributes="Bold" />
+            <Label Text="{Binding MaterialsUsed}" />
+            <Label Text="Materials Cost" FontSize="{DynamicResource SubtitleFontSize}" FontAttributes="Bold" />
+            <Label Text="{Binding MaterialsCost}" />
+            <Label Text="Hours Worked" FontSize="{DynamicResource SubtitleFontSize}" FontAttributes="Bold" />
+            <Label Text="{Binding HoursWorked}" />
+            <Label Text="Hourly Rate" FontSize="{DynamicResource SubtitleFontSize}" FontAttributes="Bold" />
+            <Label Text="{Binding HourlyRate}" />
+            <Label Text="Total Cost" FontSize="{DynamicResource TitleFontSize}" FontAttributes="Bold" />
+            <Label Text="{Binding TotalCost}" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

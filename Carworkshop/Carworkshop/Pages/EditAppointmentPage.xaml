@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Carworkshop.Pages.EditAppointmentPage"
+             Title="Edit Appointment">
+
+    <StackLayout>
+        <Entry Placeholder="Search by License Plate" Text="{Binding SearchTerm}" FontSize="{DynamicResource BodyFontSize}" />
+        <Button Text="Search" Clicked="OnSearchClicked" FontSize="{DynamicResource BodyFontSize}" />
+        <StackLayout x:Name="appointmentDetails" IsVisible="{Binding IsAppointmentFound}">
+            <Label Text="Customer Name" FontSize="{DynamicResource TitleFontSize}" />
+            <Entry Text="{Binding CustomerName}" FontSize="{DynamicResource BodyFontSize}" />
+            <Label Text="Address" FontSize="{DynamicResource TitleFontSize}" />
+            <Entry Text="{Binding Address}" FontSize="{DynamicResource BodyFontSize}" />
+            <Label Text="Car Brand" FontSize="{DynamicResource TitleFontSize}" />
+            <Entry Text="{Binding CarBrand}" FontSize="{DynamicResource BodyFontSize}" />
+            <Label Text="Car Model" FontSize="{DynamicResource TitleFontSize}" />
+            <Entry Text="{Binding CarModel}" FontSize="{DynamicResource BodyFontSize}" />
+            <Label Text="License Plate" FontSize="{DynamicResource TitleFontSize}" />
+            <Entry Text="{Binding LicensePlate}" FontSize="{DynamicResource BodyFontSize}" />
+            <Label Text="Date" FontSize="{DynamicResource TitleFontSize}" />
+            <DatePicker Date="{Binding Date}" FontSize="{DynamicResource BodyFontSize}" />
+            <Label Text="Task Description" FontSize="{DynamicResource TitleFontSize}" />
+            <Entry Text="{Binding TaskDescription}" FontSize="{DynamicResource BodyFontSize}" />
+            <Button Text="Delete Appointment" Clicked="OnDeleteClicked" FontSize="{DynamicResource BodyFontSize}" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import '../styles/EditAppointment.css';
 
 const EditAppointment = () => {
@@ -12,7 +14,7 @@ const EditAppointment = () => {
       .then(data => {
         if (data.length) {
           setAppointment(data[0]);
-          setFormData(data[0]);
+          setFormData({ ...data[0], date: new Date(data[0].date) });
         } else {
           alert('No appointment found.');
         }
@@ -27,6 +29,13 @@ const EditAppointment = () => {
     });
   };
 
+  const handleDateChange = (date) => {
+    setFormData({
+      ...formData,
+      date: date
+    });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch(`http://localhost:3000/appointments/${appointment.id}`, {
@@ -34,7 +43,7 @@ const EditAppointment = () => {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(formData)
+      body: JSON.stringify({ ...formData, date: formData.date.toISOString().split('T')[0] })
     })
       .then(response => response.json())
       .then(data => alert('Appointment updated successfully!'))
@@ -56,16 +65,28 @@ const EditAppointment = () => {
       {appointment && (
         <form onSubmit={handleSubmit}>
           {Object.keys(formData).map((key) => (
-            <div key={key} className="form-group">
-              <label>{key.charAt(0).toUpperCase() + key.slice(1)}</label>
-              <input
-                type="text"
-                name={key}
-                value={formData[key]}
-                onChange={handleChange}
-                required
-              />
-            </div>
+            key !== 'date' ? (
+              <div key={key} className="form-group">
+                <label>{key.charAt(0).toUpperCase() + key.slice(1)}</label>
+                <input
+                  type="text"
+                  name={key}
+                  value={formData[key]}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            ) : (
+              <div key={key} className="form-group">
+                <label>Date</label>
+                <DatePicker
+                  selected={formData.date}
+                  onChange={handleDateChange}
+                  dateFormat="yyyy-MM-dd"
+                  className="date-picker"
+                />
+              </div>
+            )
           ))}
           <button type="submit">Update Appointment</button>
         </form>
