@@ -17,11 +17,15 @@
     margin-bottom: 5px;
   }
   
-  .form-group input, .form-group button {
+  .form-group input, .form-group button, .form-group .date-picker {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+  }
+  
+  .form-group .date-picker {
+    padding: 0 10px;
   }
   
   .form-group button {
